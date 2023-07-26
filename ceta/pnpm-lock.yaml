@@ -1,0 +1,22 @@
+lockfileVersion: '6.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+dependencies:
+  beta:
+    specifier: file:../beta
+    version: file:../beta
+
+packages:
+
+  file:../beta:
+    resolution: {directory: ../beta, type: directory}
+    name: beta
+    peerDependencies:
+      alpha: file:../alpha
+    peerDependenciesMeta:
+      alpha:
+        optional: true
+    dev: false
